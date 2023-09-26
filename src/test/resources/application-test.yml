@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+  data:
+    mongodb:
+      database: trackingdb
+      port: 27017
+      host: localhost
+      auto-index-creation: true
