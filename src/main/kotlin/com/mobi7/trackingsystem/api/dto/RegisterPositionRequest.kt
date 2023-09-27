@@ -5,10 +5,10 @@ import javax.validation.constraints.NotBlank
 import javax.validation.constraints.NotNull
 
 data class RegisterPositionRequest(
-    @field:NotBlank val plate: String,
-    val positionDate: LocalDateTime = LocalDateTime.now(),
-    @field:NotNull val speed: Double,
-    @field:NotNull val ignite: Boolean,
-    @field:NotNull val latitude: Double,
-    @field:NotNull val longitude: Double
+    @field:NotBlank val plate: String?,
+    val positionDate: LocalDateTime? = LocalDateTime.now(),
+    @field:NotNull val speed: Double?,
+    @field:NotNull val ignite: Boolean?,
+    @field:NotNull val latitude: Double?,
+    @field:NotNull val longitude: Double?
 )
