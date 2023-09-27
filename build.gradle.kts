@@ -31,6 +31,10 @@ dependencies {
 	testImplementation("org.testcontainers:testcontainers:1.18.1")
 	testImplementation("org.testcontainers:junit-jupiter:1.18.1")
 	testImplementation("org.testcontainers:mongodb:1.18.1")
+
+	implementation("org.springdoc:springdoc-openapi-ui:1.6.12")
+	implementation("org.springdoc:springdoc-openapi-data-rest:1.6.12")
+	implementation("org.springdoc:springdoc-openapi-kotlin:1.6.12")
 }
 
 tasks.withType<KotlinCompile> {
