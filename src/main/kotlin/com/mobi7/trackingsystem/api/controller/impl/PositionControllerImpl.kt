@@ -18,7 +18,7 @@ class PositionControllerImpl(
     private val positionService: PositionService
 ) : PositionController {
     @PostMapping
-    override fun register(@Valid @RequestBody request: RegisterPositionRequest): ResponseEntity<Any> {
+    override fun register(@RequestBody @Valid request: RegisterPositionRequest): ResponseEntity<Any> {
         val position = positionService.create(request.toEntity())
         return ResponseEntity.status(HttpStatus.CREATED).body(position)
     }
