@@ -8,12 +8,12 @@ import java.time.LocalDateTime
 
 @Document(collection = "positions")
 data class Position(
-    @Id
+    @field:Id
     val id: String? = null,
     val plate: String,
     val positionDate: LocalDateTime,
     val speed: Double,
     val ignite: Boolean,
-    @GeoSpatialIndexed(type = GeoSpatialIndexType.GEO_2DSPHERE)
+    @field:GeoSpatialIndexed(type = GeoSpatialIndexType.GEO_2DSPHERE)
     val location: Location
 )

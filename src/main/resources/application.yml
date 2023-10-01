@@ -6,3 +6,5 @@ spring:
     mongodb:
       uri: ${URI:mongodb://admin:admin@localhost:27017/}
       database: ${DATABASE:trackingdb}
+      ## Criação de geospatial indexes são a condição para consultas by near no mongo. Perdi 1  dia aqui :(
+      auto-index-creation: true

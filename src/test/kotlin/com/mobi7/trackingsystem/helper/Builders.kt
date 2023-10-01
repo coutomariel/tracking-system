@@ -43,7 +43,7 @@ fun buildRegisterPositionRequest(
 
 fun buildSpot(
     name: String = "XTZ1414",
-    radius: Double = 0.0,
+    radius: Double = 500.0,
     latitude: Double = -29.974182097913253,
     longitude: Double = -51.19520764717468,
 ) = SpotOfInterest(
