@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull
 data class CreateSpotOfInterestRequest(
     @field:Schema(description = "Nome do ponto de interesse.", example = "Fabrica de rações xyz")
     @field:NotBlank val name: String?,
-    @field:Schema(description = "Raio a partir das cordenadas.", example = "150.0")
+    @field:Schema(description = "Raio em [metros] a partir das cordenadas.", example = "150.0")
     @field:NotNull val radius: Double?,
     @field:Schema(description = "Latitude capturada no momento do registro.", example = "-29.974182097913253")
     @field:NotNull val latitude: Double?,
