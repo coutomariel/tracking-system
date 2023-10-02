@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "5a0016be-e9e4-41d0-8b0a-cb9224f6492b",
+		"name": "Mobi7-tracking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5554346",
+		"_collection_link": "https://speeding-satellite-161449.postman.co/workspace/cursodsouza~793e361b-52dc-4403-a87e-3a1f2cfbaa7f/collection/5554346-5a0016be-e9e4-41d0-8b0a-cb9224f6492b?action=share&source=collection_link&creator=5554346"
+	},
+	"item": [
+		{
+			"name": "create-spot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Arena do Grêmio\",\n    \"radius\" : 500.0,\n    \"latitude\" : -29.701076,\n    \"longitude\" : -51.500988\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/spots"
+			},
+			"response": []
+		},
+		{
+			"name": "register-position",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"plate\": \"CDB2016\",\n    \"positionDate\": \"2023-09-28T22:38:58.463\",\n    \"speed\": 0.0,\n    \"ignite\": false,\n    \"latitude\":-29.701076,\n    \"longitude\":-51.500988\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/positions"
+			},
+			"response": []
+		},
+		{
+			"name": "search-stops",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/positions"
+			},
+			"response": []
+		}
+	]
+}
